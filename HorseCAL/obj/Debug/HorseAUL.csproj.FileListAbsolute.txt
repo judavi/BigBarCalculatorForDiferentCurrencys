@@ -1,0 +1,6 @@
+﻿C:\Users\jgomez\Documents\cAlgo\Sources\Robots\HorseAUL\HorseAUL\bin\Debug\HorseAUL.dll
+C:\Users\jgomez\Documents\cAlgo\Sources\Robots\HorseAUL\HorseAUL\bin\Debug\HorseAUL.pdb
+C:\Users\jgomez\Documents\cAlgo\Sources\Robots\HorseAUL\HorseAUL\bin\Debug\cAlgo.API.dll
+C:\Users\jgomez\Documents\cAlgo\Sources\Robots\HorseAUL\HorseAUL\obj\Debug\HorseAUL.csprojResolveAssemblyReference.cache
+C:\Users\jgomez\Documents\cAlgo\Sources\Robots\HorseAUL\HorseAUL\obj\Debug\HorseAUL.dll
+C:\Users\jgomez\Documents\cAlgo\Sources\Robots\HorseAUL\HorseAUL\obj\Debug\HorseAUL.pdb

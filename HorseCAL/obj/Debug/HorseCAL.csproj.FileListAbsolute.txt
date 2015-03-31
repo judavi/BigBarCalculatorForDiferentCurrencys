@@ -1,0 +1,6 @@
+C:\Users\jgomez\Documents\cAlgo\Sources\Robots\HorseCAL\HorseCAL\obj\Debug\HorseCAL.csprojResolveAssemblyReference.cache
+C:\Users\jgomez\Documents\cAlgo\Sources\Robots\HorseCAL\HorseCAL\obj\Debug\HorseCAL.dll
+C:\Users\jgomez\Documents\cAlgo\Sources\Robots\HorseCAL\HorseCAL\obj\Debug\HorseCAL.pdb
+C:\Users\jgomez\Documents\cAlgo\Sources\Robots\HorseCAL\HorseCAL\bin\Debug\HorseCAL.dll
+C:\Users\jgomez\Documents\cAlgo\Sources\Robots\HorseCAL\HorseCAL\bin\Debug\HorseCAL.pdb
+C:\Users\jgomez\Documents\cAlgo\Sources\Robots\HorseCAL\HorseCAL\bin\Debug\cAlgo.API.dll
