@@ -125,25 +125,27 @@ namespace cAlgo
 
         protected override void OnBar()
         {
-            //printPos();
+
             foreach (var item in Data)
             {
                 for (var i = 0; i < AllTimeFrames.Length - 1; i++)
                 {
                     var tf = AllTimeFrames[i];
                     var data = item[tf];
+
                     var lastIndex = data.TickVolume.Count - 1;
                     var currentVolume = data.TickVolume[lastIndex];
                     var lastVolume = LastTickVolume[tf];
                     LastTickVolume[tf] = currentVolume;
 
-                    //if (currentVolume < lastVolume)
-                    //{
-                    // New bar detected
-                    var higherTf = AllTimeFrames[i + 1];
-                    var higherTfData = item[higherTf];
-                    HandleNewBar(data, higherTfData);
-                    //}
+                    if (currentVolume < lastVolume)
+                    {
+                        Print("New bar for time frame: {0}", data.TimeFrame.ToString());
+                        // New bar detected
+                        var higherTf = AllTimeFrames[i + 1];
+                        var higherTfData = item[higherTf];
+                        HandleNewBar(data, higherTfData);
+                    }
                 }
 
                 //Print here for each symbol (5 timeframes) 
@@ -172,7 +174,6 @@ namespace cAlgo
         protected override void OnTick()
         {
 
-
         }
 
         private void HandleNewBar(MarketSeries lowerTfData, MarketSeries higherTfData)
@@ -193,10 +194,10 @@ namespace cAlgo
             }
 
             //
-            //if (barsCount >= Threshold)
-            //{
-            NotifyUser(lowerTfData.TimeFrame, higherTfData.TimeFrame, barsCount, range, higherTfData.SymbolCode);
-            //}
+            if (barsCount >= Threshold)
+            {
+                NotifyUser(lowerTfData.TimeFrame, higherTfData.TimeFrame, barsCount, range, higherTfData.SymbolCode);
+            }
         }
 
         private double GetBarRange(MarketSeries data, int historyIndex)
